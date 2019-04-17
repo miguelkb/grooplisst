@@ -1,0 +1,15 @@
+{
+	"USSER_NOT_FOUND": "No se encontró el Ussuario.",
+	"WRONG_PASSWORD": "La contraseña es incorrecta.",
+	"PASSWORD_REQUIRED": "La contraseña es obligatoria.",
+	"PROFILE_NOT_FOUND": "No se encontró el perfil.",
+	"ERROR_GETTING_PROFILE": "Error obteniendo el perfil del Ussuario.",
+	"PROFILE_IS_PRIVATE": "Este perfil es privado.",
+
+	"LISST_DELETED": "La Lissta fue borrada.",
+	"LISST_NOT_FOUND": "No se encontró la Lissta.",
+	"ERROR_GETTING_LISST": "Hubo un error obteniendo la Lissta.",
+	"ERROR_SAVING_LISST": "Hubo un error guardando Lissta.",
+	"ERROR_UPDATING_LISST": "Hubo un error actualizando la Lissta.",
+	"ERROR_DELETING_LISST": "Hubo un error borrando la Lissta."
+}

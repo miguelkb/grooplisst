@@ -1,0 +1,15 @@
+{
+	"USSER_NOT_FOUND": "Usser not found.",
+	"WRONG_PASSWORD": "Password is wrong.",
+	"PASSWORD_REQUIRED": "Password is Required.",
+	"PROFILE_NOT_FOUND": "Profile not found.",
+	"ERROR_GETTING_PROFILE": "Error getting the Usser profile.",
+	"PROFILE_IS_PRIVATE": "This profile is private.",
+
+	"LISST_DELETED": "The Lisst was deleted.",
+	"LISST_NOT_FOUND": "The Lisst was not found.",
+	"ERROR_GETTING_LISST": "There was an error getting the Lisst.",
+	"ERROR_SAVING_LISST": "There was an error saving the Lisst.",
+	"ERROR_UPDATING_LISST": "There was an error updating the Lisst.",
+	"ERROR_DELETING_LISST": "There was an error deleting the Lisst."
+}

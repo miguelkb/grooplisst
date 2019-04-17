@@ -1,0 +1,32 @@
+<p>&nbsp</p>
+<div class="row">
+	<div class="col-xs-6">
+		<a ui-sref="lissts" class="btn btn-default" role="button"><span class="glyphicon glyphicon-arrow-left"></span> {{ 'LISST_ITEM.BACK_TEXT' | translate }}</a>
+	</div>
+	
+</div>
+
+<p><hr></p>
+
+<form role="form" ng-submit="createLisst()" class="lisst-detail">
+	<div class="form-group">
+		<input type="text" ng-model="lisst.title" class="title form-control" id="lisstTitle" translate-attr="{ placeholder: 'LISST_ITEM.LISST_TITLE_PLACEHOLDER' }" />
+	</div>
+	<div class="form-group">
+		<div ng-repeat="item in lisst.items" class="lisst-item">
+			<input type="checkbox" ng-model="item.checked" class="checked">
+			<input type="text" ng-model="item.text" class="form-control text" placeholder="{{ 'LISST_ITEM.LISST_ITEM_PLACEHOLDER' | translate }} {{$index+1}}" >
+			<i class="fa fa-times-circle" ng-click="onDeleteItemClicked($index)" ng-show="item.focused" aria-hidden="true"></i>
+			<div class="clearboth"></div>
+			<div>&nbsp</div>
+		</div>
+	</div>    
+	<div class="row">
+		<div class="col-xs-6">
+			<button type="button" class="btn btn-default" ng-click="addItem()"><span class="glyphicon glyphicon-plus"></span> {{ 'LISST_ITEM.ADD_ITEM' | translate }}</button>
+		</div>
+	</div>
+	
+	
+	<p>&nbsp;</p>
+</form>

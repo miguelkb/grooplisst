@@ -1,0 +1,44 @@
+<div class="page-header">
+	<h1 translate>LISST_LIST.LISSTS</h1>
+</div>
+<div class="row">
+	<div class="col-xs-5">
+		<a ng-click="createLisst()" class="btn btn-default" translate><span class="glyphicon glyphicon-plus"></span> LISST_LIST.NEW_LISST </a>
+	</div>
+	<div class="col-xs-7">
+		<input type="text" class="form-control" ng-model="query" translate-attr="{ placeholder: 'LISST_LIST.SEARCH_TEXT' }" />
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<hr>
+	</div>
+</div>
+<div ng-switch="lissts.length">
+	<div class="row" ng-switch-when="0">
+		<ul class="col-xs-12">
+			<li><em>No Lissts in database. Would you like to <a ng-click="createLisst()">create one</a>?</em>
+			</li>
+		</ul>
+	</div>
+	<div class="row" ng-switch-default>
+		<div masonry>
+		    
+		    <div class="masonry-brick lisst-card"  ng-repeat="lisst in lissts" ng-click="onLisstClicked(lisst)">
+				<h3>{{lisst.title}}</h3>
+				<div ng-repeat="item in lisst.items" class="lisst-item">
+					<input type="checkbox" ng-model="item.checked" class="checked" disabled readonly>
+					<span>{{item.text}}</span>
+					<div class="clearboth"></div>
+				</div>
+				
+			</div>	
+		</div>
+	</div>
+	
+</div>
+<p>&nbsp;</p>
+
+<div class="footer">
+	<span>This is the Footer</span>
+</div>

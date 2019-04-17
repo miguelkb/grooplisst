@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+		title="GroopLisst"
+		script(src='//code.jquery.com/jquery-2.1.0.min.js')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js')
+		script(src='//desandro.github.io/imagesloaded/imagesloaded.pkgd.min.js')
+		script(src='/scripts/angular/angular.min.js')
+		script(src='/scripts/angular-resource/angular-resource.js')
+		script(src='/scripts/angular-translate/dist/angular-translate.min.js')
+		script(src='/scripts/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js')
+		script(src='/scripts/angular-aria/angular-aria.min.js')
+		script(src='/scripts/angular-animate/angular-animate.min.js')
+		script(src='/scripts/angular-ui-router/release/angular-ui-router.min.js')
+		script(src='/scripts/angular-sanitize/angular-sanitize.min.js')
+		script(src='/scripts/ng-toast/dist/ngToast.min.js')
+		script(src='/scripts/angular-masonry/angular-masonry.js')
+		script(src='/javascripts/app.js')
+		script(src='/javascripts/filters.js')
+		script(src='/javascripts/services/authServices.js')
+		script(src='/javascripts/services/lisstServices.js')
+		script(src='/javascripts/controllers/authControllers.js')
+		script(src='/javascripts/controllers/lisstControllers.js')
+		script(src='/socket.io/socket.io.js')
+
+	body(ng-app="groopLisst")
+		block content

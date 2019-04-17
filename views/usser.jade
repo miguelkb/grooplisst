@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	toast
+	div(ng-controller='UsserDetailController')
+		nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+			div.navbar-header
+			a.navbar-brand(href='#/ussers')= title
+		div.container
+			ui-view
